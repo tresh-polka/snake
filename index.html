@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змейка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-panel">
+            <div id="bestScore">🏆 Лучший: 0</div>
+            <div id="score">0</div>
+        </div>
+        <canvas id="gameCanvas" width="300" height="300"></canvas>
+        <div class="info" id="gameStatus">⏳ Нажми любую стрелку, чтобы начать</div>
+        <div class="info">⬆️ ⬇️ ⬅️ ➡️ — управление</div>
+    </div>
+
+    <!-- Модальное окно окончания игры -->
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2>🐍 Игра окончена</h2>
+            <p id="finalScoreMessage"></p>
+            <button id="restartButton">🔁 Новая игра</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
